@@ -1,0 +1,28 @@
+[
+  {
+    "role": "IT Project Coordinator",
+    "organisation": "Meriva",
+    "startDate": "Feb, 2023",
+    "endDate": "Dec, 2023",
+    "experiences": ["Develop a platform to facilitate the payment of contributions for dentists"],
+    "imageSrc": "history/google.png"
+  },
+  {
+    "role": "Business Analyst ",
+    "organisation": "Adaptive Consulting Engineers",
+    "startDate": "May, 2022",
+    "endDate": "August, 2022",
+    "experiences": ["Contribution to the overhaul of the information system of a credit organization. Business needs analysis and drafting of test cases (user acceptance criteria)"],
+    "imageSrc": "history/microsoft.png"
+  },
+  {
+    "role": "Data Analyst",
+    "organisation": "MsHealth",
+    "startDate": "Jun, 2021",
+    "endDate": "Sep, 2021",
+    "experiences": [
+      "Patient Risk Stratification for Chronic Diseases"
+    ],
+    "imageSrc": "history/netflix.png"
+  }
+]
