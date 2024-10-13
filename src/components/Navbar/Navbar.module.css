@@ -16,7 +16,9 @@
   text-decoration: none;
   color: var(--color-text);
 }
-
+.navlogo{
+  width: 300px;
+}
 
 .menuBtn {
   display: none;

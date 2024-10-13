@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion"; // Import framer-motion
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -8,12 +8,20 @@ export const About = () => {
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
-        <img
+        <motion.img
           src={getImageUrl("about/aboutImage.png")}
           alt="Me sitting with a laptop"
           className={styles.aboutImage}
+          initial={{ opacity: 0, x: 100 }} // Start from the right
+          whileInView={{ opacity: 1, x: 0 }} // Move to original position
+          transition={{ duration: 0.8 }} // Increased transition duration
         />
-        <ul className={styles.aboutItems}>
+        <motion.ul
+          className={styles.aboutItems}
+          initial={{ opacity: 0, x: -100 }} // Start from the left
+          whileInView={{ opacity: 1, x: 0 }} // Move to original position
+          transition={{ duration: 0.8, delay: 0.2 }} // Increased duration and delay
+        >
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
@@ -34,8 +42,7 @@ export const About = () => {
               </p>
             </div>
           </li>
-         
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );
